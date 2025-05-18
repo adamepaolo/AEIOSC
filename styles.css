@@ -1,0 +1,247 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+}
+nav a {
+  margin-left: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e1e9f1;
+}
+nav a:first-child {
+  margin-left: 0;
+}
+nav a:hover {
+  color: #66aaff;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+  background: transparent;
+  border: none;
+  color: #e1e9f1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+#darkModeToggle:hover {
+  color: #66aaff;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 60px;
+}
+h2 {
+  color: #003366;
+  margin-bottom: 18px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.service-box {
+  background-color: #e9f2fc;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Partners */
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 24px;
+}
+.partner-logo {
+  max-width: 140px;
+  filter: grayscale(100%);
+  opacity: 0.65;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+.partner-logo:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e9f2fc;
+  padding: 28px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+form button {
+  background-color: #007bff;
+  border: none;
+  padding: 14px 34px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+  nav a {
+    margin: 10px 12px;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #dcdcdc;
+}
+body.dark a {
+  color: #66aaff;
+}
+body.dark a:hover {
+  color: #a3cfff;
+  text-decoration: underline;
+}
+body.dark header {
+  background-color: #1f2937;
+  color: #dcdcdc;
+}
+body.dark nav a {
+  color: #dcdcdc;
+}
+body.dark #darkModeToggle {
+  color: #66aaff;
+}
+body.dark .container {
+  /* optional: keep same bg or add */
+}
+body.dark .service-box {
+  background-color: #1f2937;
+  color: #dcdcdc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+body.dark .partners {
+  /* unchanged */
+}
+body.dark .partner-logo {
+  filter: grayscale(60%);
+  opacity: 0.85;
+}
+body.dark form {
+  background-color: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  color: #dcdcdc;
+}
+body.dark form label {
+  color: #66aaff;
+}
+body.dark form input,
+body.dark form textarea {
+  background-color: #2e3a4a;
+  border-color: #444;
+  color: #dcdcdc;
+}
+body.dark form input:focus,
+body.dark form textarea:focus {
+  border-color: #66aaff;
+}
+body.dark form button {
+  background-color: #66aaff;
+  color: #121212;
+}
+body.dark form button:hover {
+  background-color: #3399ff;
+}
+    
