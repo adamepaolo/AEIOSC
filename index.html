@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LYNEXOS | Leading Your Needs in Oil EXploration & Services</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- FontAwesome for dark mode toggle icon -->
+  <title>LYNEXOS | Leading Your Needs in Oil Exploration & Services</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,11 +14,13 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>LYNEXOS</h1>
-    <nav>
+    <nav aria-label="Primary navigation">
       <a href="#overview">Overview</a>
       <a href="#business-profile">Business Profile</a>
       <a href="#competencies">Core Competencies</a>
@@ -25,15 +28,16 @@
       <a href="#mission-vision">Mission & Vision</a>
       <a href="#partners">Partners</a>
       <a href="#why-choose-us">Why Choose Us</a>
+      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button id="darkModeToggle" aria-label="Toggle dark mode">
-      <i class="fa-regular fa-moon"></i>
-    </button>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">Toggle Dark Mode
+  <i class="fa-regular fa-moon"></i>
+</button>
   </header>
 
-  <div class="container">
-    <section id="overview">
+  <main class="container">
+    <section id="overview" tabindex="-1">
       <h2>Company Overview</h2>
       <p>
         LYNEXOS is a dynamic and integrated oil services provider specializing in logistics, operations, and expert workforce solutions for the oil and gas industry. Our expertise and current experiences have the ability to supply high-caliber professionals for both onshore and offshore projects, ensuring operational efficiency, safety, and success across energy infrastructures.
@@ -57,8 +61,8 @@
         These collaborations underscore our commitment to excellence, compliance, and talent-driven success.
       </p>
     </section>
-
-    <section id="business-profile">
+<hr>
+    <section id="business-profile" tabindex="-1">
       <h2>Business Profile</h2>
       <p>
         An accomplished entrepreneur with over 20 years of cross-sector experience spanning printing, event management, manufacturing, and general contracting. The founder has successfully established and managed multiple ventures, demonstrating a consistent ability to deliver high-impact solutions.
@@ -74,8 +78,8 @@
         <li><strong>Manufacturing and Supply Development:</strong> Founded Al-Jawda Printing Factory producing pizza and sweets boxes for local businesses.</li>
       </ul>
     </section>
-
-    <section id="competencies">
+<hr>
+    <section id="competencies" tabindex="-1">
       <h2>Core Competencies</h2>
       <ul>
         <li>Oil & Gas Operations Support</li>
@@ -88,8 +92,8 @@
         <li>Team Leadership & Talent Development</li>
       </ul>
     </section>
-
-    <section id="values">
+<hr>
+    <section id="values" tabindex="-1">
       <h2>Core Values</h2>
       <ul>
         <li><strong>Integrity:</strong> Upholding ethics, honesty, and transparency in every decision and interaction.</li>
@@ -99,8 +103,8 @@
         <li><strong>Collaboration:</strong> Building strong partnerships based on trust and respect.</li>
       </ul>
     </section>
-
-    <section id="mission-vision">
+<hr>
+    <section id="mission-vision" tabindex="-1">
       <h2>Mission & Vision</h2>
       <h3>Mission</h3>
       <p>
@@ -111,8 +115,8 @@
         To be Libya’s most trusted and forward-looking partner in oilfield services and workforce solutions—empowering the energy sector with a skilled blend of local and expatriate professionals. We strive to drive innovation, ensure operational excellence, and contribute meaningfully to national recovery and sustainable development in a globally competitive environment.
       </p>
     </section>
-
-    <section id="why-choose-us">
+<hr>
+    <section id="why-choose-us" tabindex="-1">
       <h2>Why Choose LYNEXOS</h2>
       <ul>
         <li>20+ years of entrepreneurial and operational experience</li>
@@ -123,65 +127,126 @@
         <li>Trusted partner to Libya’s major oil companies for staffing excellence</li>
       </ul>
     </section>
-
-    <section id="partners">
+<hr>
+    <section id="partners" tabindex="-1">
       <h2>Our Partners</h2>
       <p>LYNEXOS proudly collaborates with Libya’s leading oil companies:</p>
-      <div class="partners">
-        <img src="https://via.placeholder.com/140x80?text=Waha+Oil" alt="Waha Oil Company" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Sirte+Oil" alt="Sirte Oil Company" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Akakus+Oil" alt="Akakus Oil Operations" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Zueitina+Oil" alt="Zueitina Oil Company" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Harouge+Oil" alt="Harouge Oil Operation" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Mellitah+Oil" alt="Mellitah Oil and Gas" class="partner-logo" />
-        <img src="https://via.placeholder.com/140x80?text=Mabruk+Oil" alt="Mabruk Oil Operations" class="partner-logo" />
+    <div class="partners-logos" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="partners-row" style="display: flex; gap: 2rem; justify-content: center;">
+            <img src="images/woc.jpg" alt="Waha Oil Company" class="partner-logo" role="listitem" />
+            <img src="images/soc.jpg" alt="Sirte Oil Company" class="partner-logo" role="listitem" />
+            <img src="images/aoo.jpg" alt="Akakus Oil Operations" class="partner-logo" role="listitem" />
+            <img src="images/zoc.png" alt="Zueitina Oil Company" class="partner-logo" role="listitem" />
+        </div>
+        <div class="partners-row" style="display: flex; gap: 2rem; justify-content: center; margin-top: 1.5rem;">
+            <img src="images/hoo.png" alt="Harouge Oil Operation" class="partner-logo" role="listitem" />
+            <img src="images/mog.jpg" alt="Mellitah Oil and Gas" class="partner-logo" role="listitem" />
+            <img src="images/moo.jpg" alt="Mabruk Oil Operations" class="partner-logo" role="listitem" />
+        </div>
+    </div>
       </div>
     </section>
-
-    <section id="services">
+<hr>
+    <section id="services" tabindex="-1">
       <h2>Services Offered</h2>
       <div class="services-grid">
-        <div class="service-box">
+        <article class="service-box">
           <h3>Oilfield Technical Staffing</h3>
           <p>Engineers, Operators, HSE Officers, Supervisors staffed onshore and offshore to meet project demands.</p>
-        </div>
-        <div class="service-box">
+        </article>
+        <article class="service-box">
           <h3>Manpower Deployment</h3>
           <p>Efficient deployment and management of skilled personnel across all oilfield operations.</p>
-        </div>
-        <div class="service-box">
+        </article>
+        <article class="service-box">
           <h3>Equipment Logistics</h3>
           <p>Reliable supply and logistics support for critical oil & gas equipment and materials.</p>
-        </div>
-        <div class="service-box">
+        </article>
+        <article class="service-box">
           <h3>Project & Camp Management</h3>
           <p>Comprehensive contracting and camp setup services tailored for oilfield project needs.</p>
-        </div>
+        </article>
       </div>
     </section>
-
-    <section id="contact">
+<hr>
+    <section id="contact" tabindex="-1">
       <h2>Contact</h2>
-      <p>
-        Email: info@lynexos.com<br />
-        Phone: +218 123 456 789<br />
+      <address>
+        Email: <a href="mailto:info@lynexos.com">info@lynexos.com</a><br />
+        Phone: <a href="tel:+218123456789">+218 123 456 789</a><br />
         Address: Tripoli, Libya
-      </p>
+      </address>
     </section>
-  </div>
+  </main>
 
   <script>
-    const toggleBtn = document.getElementById('darkModeToggle');
+   const toggleBtn = document.getElementById('darkModeToggle');
     const icon = toggleBtn.querySelector('i');
 
     toggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('dark');
       if (document.body.classList.contains('dark')) {
-        icon.classList.replace('fa-moon', 'fa-sun');
-      } else {
-        icon.classList.replace('fa-sun', 'fa-moon');
-      }
-    });
-  </script>
-</body>
+icon.classList.remove('fa-moon');
+icon.classList.add('fa-sun');
+} else {
+icon.classList.remove('fa-sun');
+icon.classList.add('fa-moon');
+}
+}); 
+</script>
+
+
+<footer role="contentinfo" class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>LYNEXOS</h3>
+      <p class="tagline">Leading Your Needs in Oil Exploration & Services</p>
+    </div>
+    
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#business-profile">Business Profile</a></li>
+          <li><a href="#competencies">Core Competencies</a></li>
+          <li><a href="#values">Core Values</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#mission-vision">Mission & Vision</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#why-choose-us">Why Choose Us</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <address>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@lynexos.com">info@lynexos.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+218123456789">+218 123 456 789</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Tripoli, Libya</p>
+        </address>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="copyright">© 2025 LYNEXOS. All rights reserved.</p>
+  </div>
+</footer>
+
+</body> 
+
+
 </html>

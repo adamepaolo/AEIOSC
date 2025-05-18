@@ -1,20 +1,19 @@
-// Dark mode toggle functionality
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('darkModeToggle');
-  const body = document.body;
   const icon = toggleBtn.querySelector('i');
-
-  // Load user preference from localStorage (optional)
+  
+  // Check for saved user preference
   if (localStorage.getItem('lynexos-dark-mode') === 'enabled') {
-    body.classList.add('dark');
+    document.body.classList.add('dark');
     icon.classList.replace('fa-moon', 'fa-sun');
     toggleBtn.setAttribute('aria-label', 'Switch to light mode');
   }
 
+  // Toggle dark mode
   toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark');
-    const isDark = body.classList.contains('dark');
-
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    
     if (isDark) {
       icon.classList.replace('fa-moon', 'fa-sun');
       toggleBtn.setAttribute('aria-label', 'Switch to light mode');
@@ -25,4 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('lynexos-dark-mode', 'disabled');
     }
   });
-});
+}); 
