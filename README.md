@@ -1,2 +1,2 @@
-# LYNEXOS
-A Sample Website for Private Company Named LYNEXOS
+# AEIOSC 
+A Sample Website for Private Company Named AEIOSC 
