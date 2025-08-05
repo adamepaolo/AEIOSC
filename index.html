@@ -4,87 +4,117 @@
     <meta charset="UTF-8">
     <title>AEIOSC - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #005599;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            background-color: #f4f4f4;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .hero a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .hero a:hover {
-            background-color: #005599;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
+    <div class="top-header">
+        <div>
+            <img src="path/to/clock_icon.png" alt="Opening Hours Icon">
+            <span>Opening Hours: Saturday - Thursday, 8:00 am - 4:00 pm (EET, UTC+02:00)</span>
+        </div>
+        <div>
+            <img src="path/to/phone_icon.png" alt="Call Us Icon">
+            <span>Call Us: +218 91 250 9887</span>
+        </div>
+        <div>
+            <img src="path/to/email_icon.png" alt="Email Icon">
+            <span>Email: info@aeiosc.ly</span>
+        </div>
+    </div>
+
     <header>
-        <h1>Al-Ezdehar International Oil Services Company (AEIOSC)</h1>
-        <p>Empowering Libya's Energy Sector Through Competent & Expert Manpower</p>
+        <a href="index.html" class="logo-link">
+            <h1>Al-Ezdehar International Oil Services Company (AEIOSC)</h1>
+        </a>
+        <button id="darkModeToggle" aria-label="Switch to dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="mission.html">Mission & Values</a>
-        <a href="why.html">Why Choose Us</a>
-        <a href="contact.html">Contact</a>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="about.html">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mission.html">Mission & Vision</a></li>
+                    <li><a href="why.html">Why Choose Us</a></li>
+                    <li><a href="#">Quality Policy Statement</a></li>
+                    <li><a href="#">HSE</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Completed</a></li>
+                    <li><a href="#">Ongoing</a></li>
+                </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
+
     <div class="hero">
         <h1>Welcome to AEIOSC</h1>
         <p>Your trusted partner in oilfield manpower and logistics solutions.</p>
         <a href="about.html">Learn More</a>
         <a href="contact.html">Contact Us</a>
     </div>
-    <footer>
-        <p>&copy; 2024 Al-Ezdehar International Oil Services Company. All rights reserved.</p>
+
+    <a href="https://wa.me/yourphonenumber" target="_blank" class="whatsapp-button">
+        <img src="path/to/whatsapp_icon.png" alt="WhatsApp">
+    </a>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Al-Ezdehar International Oil Services Company</h3>
+                <p class="tagline">Empowering Libya's Energy Sector</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <address>
+                    <p><i class="fas fa-phone-alt"></i> +218 91 250 9887</p>
+                    <p><i class="fas fa-envelope"></i> info@aeiosc.ly</p>
+                    <p><i class="fas fa-envelope"></i> recruitment@aeiosc.ly</p>
+                </address>
+            </div>
+            <div class="footer-column">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li><i class="far fa-clock"></i> Saturday - Thursday</li>
+                    <li><i class="far fa-clock"></i> 8:00 am - 4:00 pm</li>
+                    <li><i class="fas fa-globe-americas"></i> (EET, UTC+02:00)</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Visit Us At</h4>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> Hay Al Andalus</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tripoli - Libya</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Al-Ezdehar International Oil Services Company. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
