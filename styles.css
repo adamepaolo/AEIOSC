@@ -70,7 +70,7 @@ a:focus {
     height: 16px;
 }
 header {
-  background-color: #B59410;
+  background-color: #AA6C39;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -715,13 +715,13 @@ body.dark .social-links a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 body.dark .social-links a:hover {
-  background-color: #d4af37;
+  background-color: #AA6C39;
   color: #1a1a1a;
 }
 
 /* Accessibility focus */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #b8860b;
+  outline: 2px solid #AA6C39;
   outline-offset: 2px;
 }
